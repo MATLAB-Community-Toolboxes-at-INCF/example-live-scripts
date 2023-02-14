@@ -27,13 +27,16 @@ The DANDI archive datasets (Dandisets) are implemented as an Amazon Web Services
 
 **[Dandihub](https://hub.dandiarchive.org/hub)** is a convenience JupyterHub environment that combines these resources within a virtual desktop:
 * pre-mounting the DANDI archive data & this example library\* as folders
-* pre-installing MATLAB(\*\*) and MatNWB software
+* pre-installing MATLAB\*\* and MatNWB software
 
 Outside Dandihub, users can use this library by [cloning the whole GitHub repository](https://www.mathworks.com/help/matlab/matlab_prog/use-git-in-matlab.html) given its limited size. This can be a folder within their [MATLAB Drive](https://www.mathworks.com/products/matlab-drive.html) which makes the data available for use in [MATLAB Online](https://www.mathworks.com/products/matlab-online.html). 
 
 Utilizing [remote data access](https://www.mathworks.com/help/matlab/import_export/work-with-remote-data.html) functions for working with S3 data are recommended for the best possible performance, in both local desktop and MATLAB Online environments. 
 
 Individual examples in this library are coded & tested to access their Dandiset using one or more of these workflows (local machine, MATLAB Online, Dandihub). This will typically be described in the example README files. 
+
+(\*) coming soon <br/>
+(\*\*) using the [MATLAB Integration for Jupyter](https://mathworks.sharepoint.com/sites/eps/SitePages/MATLAB-Integration-for-Jupyter.aspx)
 
 ## Submitting Your DANDI Archive Example Live Scripts
 
