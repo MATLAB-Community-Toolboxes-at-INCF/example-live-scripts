@@ -36,7 +36,7 @@ Utilizing [remote data access](https://www.mathworks.com/help/matlab/import_expo
 Individual examples in this library are coded and tested to access their Dandiset using one or more of these workflows (local machine, MATLAB Online, Dandihub). This will typically be described in the example README files. 
 
 (\*) coming soon <br/>
-(\*\*) using the [MATLAB Integration for Jupyter](https://mathworks.sharepoint.com/sites/eps/SitePages/MATLAB-Integration-for-Jupyter.aspx)
+(\*\*) using the [MATLAB Integration for Jupyter](https://www.mathworks.com/products/reference-architectures/jupyter.html)
 
 ## Submitting Your DANDI Archive Example Live Scripts
 
