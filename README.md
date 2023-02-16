@@ -45,6 +45,6 @@ Individual examples in this library are coded and tested to access their Dandise
 
 ## Credits
 * For individual examples, see the copyright information in their LICENSE files for attribution. 
-* The NWB data standard, MatNWB software, and DANDI data archive are projects supported by The BRAIN Initiative® NIH funding.
-* The NWB data standard and MatNWB software were initiated by The Kavli Foundation.
+* The NWB data standard and software (incl. MatNWB) are supported by the NIH BRAIN Initiative® and the Kavli Foundation. See [here](https://www.nwb.org/projects/) for details on funded NWB project and [here](https://www.nwb.org/publications/) relevant publications. 
+* The DANDI data archive project is supported by the NIH BRAIN Initiative® 
 * MATLAB is a registered trademark of MathWorks®.
