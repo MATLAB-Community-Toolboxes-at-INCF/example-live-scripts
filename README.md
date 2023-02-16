@@ -40,8 +40,6 @@ Individual examples in this library are coded and tested to access their Dandise
 
 ## Submitting Your DANDI Archive Example Live Scripts
 
-## Contributing to DANDI Archive Example Live Scripts
-
 
 ## Credits
 * For individual examples, see the copyright information in their LICENSE files for attribution. 
