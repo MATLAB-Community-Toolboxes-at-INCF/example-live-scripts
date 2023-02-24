@@ -20,10 +20,8 @@ To achieve these goals, the live script examples combine code, narrative text, i
 
 To access the dataset, most examples use **[MatNWB](https://www.mathworks.com/matlabcentral/fileexchange/67741-neurodatawithoutborders-matnwb) software** which is an open-source MATLAB toolbox for inspecting, reading, writing, and working with data encoded in NWB format. 
 
-## Finding DANDI Archive Example Live Scripts
+## Finding Dandisets of Interest
 The best way to find Dandisets of interest is to browse the [DANDI archive web directory](https://dandiarchive.org/dandiset). Each Dandiset has a unique 6-digit Dandiset identifier.
-
-This example library is organized at the top level by folders named for a unique Dandiset identifier. Each folder contains one or more examples of working with that dataset. 
 
 ## Using DANDI Archive Example Live Scripts
 This library is implemented as a GitHub repository. Examples in this library consist of code and text files, but not the large datasets directly.
