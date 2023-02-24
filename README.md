@@ -1,22 +1,27 @@
 # example-live-scripts
-Library of examples using DANDI archive datasets authored as MATLAB® live scripts
+Library of examples using DANDI archive datasets ('Dandisets') authored as MATLAB® live scripts
 
-## About 
-The **[DANDI Archive](https://dandiarchive.org/)** hosts and catalogs openly licensed cellular neurophysiology datasets which allows for reproduced and reworked analyses, which can in turn strenghthen and advance the quality and impact of those datasets.
+## About the Library
+The **[DANDI Archive](https://dandiarchive.org/)** hosts and catalogs openly licensed cellular neurophysiology datasets. 
 
-This library contains examples of reproduced and/or reworked DANDI archive dataset analyses authored as **MATLAB [live scripts](https://www.mathworks.com/help/matlab/matlab_prog/what-is-a-live-script-or-function.html)**. 
+DANDI Archive datasets (**'Dandisets'**) predominantly use the **[Neurodata without Borders](https://www.nwb.org/) (NWB) data standard**. The NWB standard allows neuroscientists to exchange cellular neurophysiology data in a common format.
 
-Broadly speaking, the library of examples contained here: 
-* explain the scientific context of the study producing the original DANDI archive dataset
-* illustrate how to access and use a DANDI archive dataset
-* achieve a reproduction and/or reworking of one or more findings (e.g., specific figures) from a DANDI archive dataset, potentially generating novel insights
+This library contains reproduced and/or reworked Dandiset analyses authored as **MATLAB [live script](https://www.mathworks.com/help/matlab/matlab_prog/what-is-a-live-script-or-function.html)** examples. 
 
-To achieve these goals, these live script examples combine code, narrative text, images, and sometimes [interactive controls](https://www.mathworks.com/help/matlab/matlab_prog/add-interactive-controls-to-a-live-script.html).
+Reproduced and reworked analyses can serve to advance the quality and impact of original scientific datasets. Supporting and encouraging such 're-hacked' analyses is the goal of this library. 
 
-DANDI Archive datasets predominantly use the **[Neurodata without Borders](https://www.nwb.org/) (NWB) data standard** which allows neuroscientists to exchange cellular neurophysiology data in a common format. To access the dataset, most examples use **[MatNWB](https://www.mathworks.com/matlabcentral/fileexchange/67741-neurodatawithoutborders-matnwb) software** which is an open-source MATLAB toolbox for inspecting, reading, writing, and working with data encoded in NWB format. 
+## About the Examples
+Accepted library examples will typically: 
+* explain the scientific context of the study producing the original Dandiset
+* illustrate how to access and use a Dandiset
+* achieve a reproduction and/or reworking of one or more findings (e.g., specific figures) from a Dandiset, potentially generating novel insights
+
+To achieve these goals, the live script examples combine code, narrative text, images, and sometimes [interactive controls](https://www.mathworks.com/help/matlab/matlab_prog/add-interactive-controls-to-a-live-script.html).
+
+To access the dataset, most examples use **[MatNWB](https://www.mathworks.com/matlabcentral/fileexchange/67741-neurodatawithoutborders-matnwb) software** which is an open-source MATLAB toolbox for inspecting, reading, writing, and working with data encoded in NWB format. 
 
 ## Finding DANDI Archive Example Live Scripts
-The best way to find DANDI archive datasets (aka 'Dandisets') of interest is to browse the [DANDI archive web directory](https://dandiarchive.org/dandiset). Each Dandiset has a unique Dandiset identifier which is a 6 digit numeric code. 
+The best way to find Dandisets of interest is to browse the [DANDI archive web directory](https://dandiarchive.org/dandiset). Each Dandiset has a unique 6-digit Dandiset identifier.
 
 This example library is organized at the top level by folders named for a unique Dandiset identifier. Each folder contains one or more examples of working with that dataset. 
 
