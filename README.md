@@ -23,10 +23,10 @@ To access the dataset, most examples use **[MatNWB](https://www.mathworks.com/ma
 ## Finding Dandisets of Interest
 The best way to find Dandisets of interest is to browse the [DANDI archive web directory](https://dandiarchive.org/dandiset). Each Dandiset has a unique 6-digit Dandiset identifier.
 
-## Using DANDI Archive Example Live Scripts
+## Using Dandiset Example Live Scripts
 This library is implemented as a GitHub repository. Examples in this library consist of code and text files, but not the large datasets directly.
 
-The DANDI archive datasets (Dandisets) are implemented as an Amazon Web Services (AWS) [S3 bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingBucket.html), under the [AWS Open Data Sponsorship Program](https://aws.amazon.com/opendata/open-data-sponsorship-program/). 
+Dandiset data storage is implemented as an Amazon Web Services (AWS) [S3 bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingBucket.html), under the [AWS Open Data Sponsorship Program](https://aws.amazon.com/opendata/open-data-sponsorship-program/). 
 
 **[Dandihub](https://hub.dandiarchive.org/hub)** is a convenience JupyterHub environment that combines these resources within a virtual desktop:
 * pre-mounting the DANDI archive data and this example library\* as folders
@@ -41,7 +41,7 @@ Individual examples in this library are coded and tested to access their Dandise
 (\*) coming soon <br/>
 (\*\*) using the [MATLAB Integration for Jupyter](https://www.mathworks.com/products/reference-architectures/jupyter.html)
 
-## Submitting Your DANDI Archive Example Live Scripts
+## Submitting Your Dandiset Example Live Scripts
 
 
 ## Credits
