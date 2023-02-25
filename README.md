@@ -45,8 +45,17 @@ MATLAB Online uses [MATLAB Drive](https://www.mathworks.com/products/matlab-onli
 ### Individual MATLAB Environment
 Individual MATLAB environments on user machines or cluster nodes offer greater storage & flexibility. Utilizing [remote data access](https://www.mathworks.com/help/matlab/import_export/work-with-remote-data.html) functions for working with S3 data is recommended for the best possible performance. 
 
-## Submitting Your Dandiset Example Live Scripts
+## Submitting Your Dandiset Example Live Script(s)
+This library collects together examples from diverse independent contributors. 
 
+Example authors can submit candidate example live scripts as [GitHub pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) for potential inclusion in the library. The [library adminstrators](#library-administrators) will review the pull request. 
+
+Submitted example live scripts can be either hosted natively in this library or originated externally to this library (cloned/mirrored into the library). 
+
+See the [Submitting Your Dandiset Example Live Script(s)](https://github.com/INCF/example-live-scripts/wiki/Submitting-Your-Dandiset-Example-Live-Script(s)) wiki page for further information and guidelines. 
+
+## Library Administrators 
+The [MatNWB Working Group](https://www.incf.org/sig/incf-working-group-nwb) chartered by the [INCF organization](https://www.incf.org/) serve as the adminstrators for this library. 
 
 ## Credits
 * For individual examples, see the copyright information in their LICENSE files for attribution. 
