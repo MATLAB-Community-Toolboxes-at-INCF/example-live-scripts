@@ -28,7 +28,7 @@ Using Dandiset examples requires bringing together both:
 * **code** - this example library on GitHub
 * **data** - DANDI archive storage on an Amazon Web Services (AWS) [S3 bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingBucket.html)
 
-Users can elect **convenience MATLAB environments** which streamline all or some of these aspects, or to configure their own **individual environment** for maximum flexibility. 
+Users can elect **convenience MATLAB environments** which streamline all or some of these aspects, or to configure their own **individual MATLAB environment** for maximum flexibility. 
 
 ### Convenience MATLAB Environments
 #### DandiHub MATLAB Environment
