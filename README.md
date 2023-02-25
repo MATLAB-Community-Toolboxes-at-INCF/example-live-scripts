@@ -32,7 +32,7 @@ Users can elect **convenience MATLAB environments** which streamline all or some
 
 ### Convenience MATLAB Environments
 #### DandiHub MATLAB Environment
-**[Dandihub](https://hub.dandiarchive.org/hub)** is a JupyterHub environment that combines these resources within a pre-configured virtual desktop that pre-mounts the example code\* & Dandiset data as folders. MATLAB and MatNWB software are pre-installed. MATLAB\*\* and MatNWB software are pre-installed. 
+**[Dandihub](https://hub.dandiarchive.org/hub)** is a JupyterHub environment that combines these resources within a pre-configured virtual desktop that pre-mounts the example code\* & Dandiset data as folders. MATLAB\*\* and MatNWB software are pre-installed. 
 
 (\*) coming soon <br/>
 (\*\*) using the [MATLAB Integration for Jupyter](https://www.mathworks.com/products/reference-architectures/jupyter.html)
