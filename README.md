@@ -38,12 +38,12 @@ Users can elect **convenience MATLAB environments** which streamline all or some
 (\*\*) using the [MATLAB Integration for Jupyter](https://www.mathworks.com/products/reference-architectures/jupyter.html)
 
 ### MATLAB Online Environment
-[MATLAB Online](https://www.mathworks.com/products/matlab-online.html) is a web browser-based MATLAB environment with connectivity to [GitHub](https://www.mathworks.com/products/matlab-online/data-access.html#github) and [AWS S3](https://www.mathworks.com/products/matlab-online/data-access.html#aws) data. 
+[MATLAB Online](https://www.mathworks.com/products/matlab-online.html) is a web browser-based MATLAB environment with connectivity to [GitHub](https://www.mathworks.com/products/matlab-online/data-access.html#github) code and [AWS S3](https://www.mathworks.com/products/matlab-online/data-access.html#aws) data. 
 
 MATLAB Online uses [MATLAB Drive](https://www.mathworks.com/products/matlab-online/data-access.html#matlab-drive) as its cloud filesystem. Code can be [cloned](https://www.mathworks.com/help/matlab/matlab_prog/use-git-in-matlab.html) there from GitHub & data can be cached there from AWS.
 
 ### Individual MATLAB Environment
-Individual MATLAB environments on user machines or cluster environments offer greater storage & flexibility. Utilizing [remote data access](https://www.mathworks.com/help/matlab/import_export/work-with-remote-data.html) functions for working with S3 data is  recommended for the best possible performance. 
+Individual MATLAB environments on user machines or cluster nodes offer greater storage & flexibility. Utilizing [remote data access](https://www.mathworks.com/help/matlab/import_export/work-with-remote-data.html) functions for working with S3 data is recommended for the best possible performance. 
 
 ## Submitting Your Dandiset Example Live Scripts
 
