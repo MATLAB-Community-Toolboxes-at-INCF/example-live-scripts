@@ -55,7 +55,7 @@ Submitted example live scripts can be either hosted natively in this library or 
 See the [Submitting Your Dandiset Example Live Script(s)](https://github.com/INCF/example-live-scripts/wiki/Submitting-Your-Dandiset-Example-Live-Script(s)) wiki page for further information and guidelines. 
 
 ## Library Administrators 
-The [MatNWB Working Group](https://www.incf.org/sig/incf-working-group-nwb) chartered by the [INCF organization](https://www.incf.org/) serve as the adminstrators for this library. 
+The [MatNWB Working Group](https://www.incf.org/sig/incf-working-group-nwb) chartered by the [INCF organization](https://www.incf.org/) serves as the administrators for this library. 
 
 ## Credits
 * For individual examples, see the copyright information in their LICENSE files for attribution. 
