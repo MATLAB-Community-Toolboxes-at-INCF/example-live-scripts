@@ -1,48 +1,65 @@
 # example-live-scripts
-Library of examples using DANDI archive datasets authored as MATLAB® live scripts
+Library of examples using DANDI archive datasets ('Dandisets') authored as MATLAB® live scripts
 
-## About 
-The **[DANDI Archive](https://dandiarchive.org/)** hosts and catalogs openly licensed cellular neurophysiology datasets which allows for reproduced and reworked analyses, which can in turn strenghthen and advance the quality and impact of those datasets.
+## About the Library
+The **[DANDI Archive](https://dandiarchive.org/)** hosts and catalogs openly licensed cellular neurophysiology datasets. 
 
-This library contains examples of reproduced and/or reworked DANDI archive dataset analyses authored as **MATLAB [live scripts](https://www.mathworks.com/help/matlab/matlab_prog/what-is-a-live-script-or-function.html)**. 
+DANDI Archive datasets (**'Dandisets'**) predominantly use the **[Neurodata without Borders](https://www.nwb.org/) (NWB) data standard**. The NWB standard allows neuroscientists to exchange cellular neurophysiology data in a common format.
 
-Broadly speaking, the library of examples contained here: 
-* explain the scientific context of the study producing the original DANDI archive dataset
-* illustrate how to access and use a DANDI archive dataset
-* achieve a reproduction and/or reworking of one or more findings (e.g., specific figures) from a DANDI archive dataset, potentially generating novel insights
+This library contains reproduced and/or reworked Dandiset analyses authored as **MATLAB [live script](https://www.mathworks.com/help/matlab/matlab_prog/what-is-a-live-script-or-function.html)** examples. 
 
-To achieve these goals, these live script examples combine code, narrative text, images, and sometimes [interactive controls](https://www.mathworks.com/help/matlab/matlab_prog/add-interactive-controls-to-a-live-script.html).
+Reproduced and reworked analyses can serve to advance the quality and impact of original scientific datasets. Supporting and encouraging such 're-hacked' analyses is the goal of this library. 
 
-DANDI Archive datasets predominantly use the **[Neurodata without Borders](https://www.nwb.org/) (NWB) data standard** which allows neuroscientists to exchange cellular neurophysiology data in a common format. To access the dataset, most examples use **[MatNWB](https://www.mathworks.com/matlabcentral/fileexchange/67741-neurodatawithoutborders-matnwb) software** which is an open-source MATLAB toolbox for inspecting, reading, writing, and working with data encoded in NWB format. 
+## About the Examples
+Accepted library examples will typically: 
+* explain the scientific context of the study producing the original Dandiset
+* illustrate how to access and use a Dandiset
+* achieve a reproduction and/or reworking of one or more findings (e.g., specific figures) from a Dandiset, potentially generating novel insights
 
-## Finding DANDI Archive Example Live Scripts
-The best way to find DANDI archive datasets (aka 'Dandisets') of interest is to browse the [DANDI archive web directory](https://dandiarchive.org/dandiset). Each Dandiset has a unique Dandiset identifier which is a 6 digit numeric code. 
+To achieve these goals, the live script examples combine code, narrative text, images, and sometimes [interactive controls](https://www.mathworks.com/help/matlab/matlab_prog/add-interactive-controls-to-a-live-script.html).
 
-This example library is organized at the top level by folders named for a unique Dandiset identifier. Each folder contains one or more examples of working with that dataset. 
+To access the dataset, most examples use **[MatNWB](https://www.mathworks.com/matlabcentral/fileexchange/67741-neurodatawithoutborders-matnwb) software** which is an open-source MATLAB toolbox for inspecting, reading, writing, and working with data encoded in NWB format. 
 
-## Using DANDI Archive Example Live Scripts
-This library is implemented as a GitHub repository. Examples in this library consist of code and text files, but not the large datasets directly.
+## Finding Dandisets of Interest
+The best way to find Dandisets of interest is to browse the [DANDI archive web directory](https://dandiarchive.org/dandiset). Each Dandiset has a unique 6-digit Dandiset identifier.
 
-The DANDI archive datasets (Dandisets) are implemented as an Amazon Web Services (AWS) [S3 bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingBucket.html), under the [AWS Open Data Sponsorship Program](https://aws.amazon.com/opendata/open-data-sponsorship-program/). 
+## Using Dandiset Example Live Scripts
+Using Dandiset examples requires bringing together both:
+* **code** - this example library on GitHub
+* **data** - DANDI archive storage on an Amazon Web Services (AWS) [S3 bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingBucket.html)
 
-**[Dandihub](https://hub.dandiarchive.org/hub)** is a convenience JupyterHub environment that combines these resources within a virtual desktop:
-* pre-mounting the DANDI archive data and this example library\* as folders
-* pre-installing MATLAB\*\* and MatNWB software
+Users can elect **convenience MATLAB environments** which streamline all or some of these aspects, or to configure their own **individual MATLAB environment** for maximum flexibility. 
 
-Outside Dandihub, users can use this library by [cloning the whole GitHub repository](https://www.mathworks.com/help/matlab/matlab_prog/use-git-in-matlab.html) given its limited size. This can be a folder within their [MATLAB Drive](https://www.mathworks.com/products/matlab-drive.html) which makes the data available for use in [MATLAB Online](https://www.mathworks.com/products/matlab-online.html). 
-
-Utilizing [remote data access](https://www.mathworks.com/help/matlab/import_export/work-with-remote-data.html) functions for working with S3 data are recommended for the best possible performance, in both local desktop and MATLAB Online environments. 
-
-Individual examples in this library are coded and tested to access their Dandiset using one or more of these workflows (local machine, MATLAB Online, Dandihub). This will typically be described in the example README files. 
+### Convenience MATLAB Environments
+#### DandiHub MATLAB Environment
+**[Dandihub](https://hub.dandiarchive.org/hub)** is a JupyterHub environment that combines these resources within a pre-configured virtual desktop that pre-mounts the example code\* & Dandiset data as folders. MATLAB\*\* and MatNWB software are pre-installed. 
 
 (\*) coming soon <br/>
 (\*\*) using the [MATLAB Integration for Jupyter](https://www.mathworks.com/products/reference-architectures/jupyter.html)
 
-## Submitting Your DANDI Archive Example Live Scripts
+### MATLAB Online Environment
+[MATLAB Online](https://www.mathworks.com/products/matlab-online.html) is a web browser-based MATLAB environment with connectivity to [GitHub](https://www.mathworks.com/products/matlab-online/data-access.html#github) code and [AWS S3](https://www.mathworks.com/products/matlab-online/data-access.html#aws) data. 
 
+MATLAB Online uses [MATLAB Drive](https://www.mathworks.com/products/matlab-online/data-access.html#matlab-drive) as its cloud filesystem. Code can be [cloned](https://www.mathworks.com/help/matlab/matlab_prog/use-git-in-matlab.html) there from GitHub & data can be cached there from AWS.
+
+### Individual MATLAB Environment
+Individual MATLAB environments on user machines or cluster nodes offer greater storage & flexibility. Utilizing [remote data access](https://www.mathworks.com/help/matlab/import_export/work-with-remote-data.html) functions for working with S3 data is recommended for the best possible performance. 
+
+## Submitting Your Dandiset Example Live Script(s)
+This library collects together examples from diverse independent contributors. 
+
+Example authors can submit candidate example live scripts as [GitHub pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) for potential inclusion in the library. The [library adminstrators](#library-administrators) will review the pull request. 
+
+Submitted example live scripts can be either hosted natively in this library or originated externally to this library (cloned/mirrored into the library). 
+
+See the [Submitting Your Dandiset Example Live Script(s)](https://github.com/INCF/example-live-scripts/wiki/Submitting-Your-Dandiset-Example-Live-Script(s)) wiki page for further information and guidelines. 
+
+## Library Administrators 
+The [MatNWB Working Group](https://www.incf.org/sig/incf-working-group-nwb) chartered by the [INCF organization](https://www.incf.org/) serves as the administrators for this library. 
 
 ## Credits
 * For individual examples, see the copyright information in their LICENSE files for attribution. 
 * The NWB data standard and software (incl. MatNWB) are supported by the NIH BRAIN Initiative® and the Kavli Foundation. See [here](https://www.nwb.org/projects/) for details on funded NWB project and [here](https://www.nwb.org/publications/) relevant publications. 
 * The DANDI data archive project is supported by the NIH BRAIN Initiative® 
+* DANDI archive AWS storage is available under the [AWS Open Data Sponsorship Program](https://aws.amazon.com/opendata/open-data-sponsorship-program/). 
 * MATLAB is a registered trademark of MathWorks®.
