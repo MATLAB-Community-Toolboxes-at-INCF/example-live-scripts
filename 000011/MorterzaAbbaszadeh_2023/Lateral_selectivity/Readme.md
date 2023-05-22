@@ -1,10 +1,10 @@
 ##  Robust neuronal dynamics in premotor cortex during motor planning(Dandiset 000011)
 
-Release 0.01
+Release 1
 
 [Source Repository](https://github.com/dandisets/000011)
 
-by Morteza Abbaszadeh
+by [Morteza Abbaszadeh](https://github.com/MorterzaAbbaszadeh)
 
 ![Model](https://github.com/MorterzaAbbaszadeh/example-live-scripts/blob/4dd0a17073467e2176ba66a11e479bd05d1399f3/000011/MorterzaAbbaszadeh/Publications/mouse_on_phone.png)
 
