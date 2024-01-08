@@ -6,7 +6,7 @@
 %    from_location  : the location from where the live-script is ran. Could be either "local", "dandi" or "online".
 %    dandiset_id    : the ID of the DANDI data set.
 %    nwb_path       : the path towards the NWB files within the DANDI data set (keyword argument).
-%    util_libs      : the path relative to the live-script that uses this function that points towards any utils libraries.
+%    util_libs      : the list of paths relative to the live-script that uses this function that points towards any utils libraries.
 %
 %% Outputs:
 %
@@ -14,7 +14,7 @@
 %
 %% Example:
 %
-%    nwb_final_path = startup("dandi", "000011", nwb_path="sub-255201_ses-20141124_behavior+ecephys+ogen.nwb", util_libs="helper-functions")
+%    nwb_final_path = startup("dandi", "000011", nwb_path="sub-255201_ses-20141124_behavior+ecephys+ogen.nwb", util_libs=["helper-functions"])
 %
 %  This call will setup the live-script to use the 000011 data set, considering that the live-script that requires this setup is running on DANDI-Hub.
 %  This call also setup the NWB file to be located in "000011/sub-255201_ses-20141124_behavior+ecephys+ogen.nwb"
@@ -27,7 +27,8 @@ function dataPath = startup(from_location, dandiset_id, varargin)
         addRequired(p, 'from_location', @(x)mustBeNonempty(validatestring(x, {'local', 'dandi', 'online'})))
         addRequired(p, 'dandiset_id', @(x)validateattributes(x, {'string', 'char'}, {'nonempty'}))
         addParameter(p, 'nwb_path', '', @(x)validateattributes(x, {'string', 'char'}, {'nonempty'}))
-        addParameter(p, 'util_libs', [], @(x)isscalar)
+        addParameter(p, 'util_libs', [])%, @(x)mustBeNonempty)
+
     end
     parse(p, from_location, dandiset_id, varargin{:});
     nwb_path = p.Results.nwb_path;
