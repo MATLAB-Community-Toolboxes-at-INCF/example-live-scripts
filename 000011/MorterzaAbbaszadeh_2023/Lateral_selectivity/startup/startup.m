@@ -24,9 +24,9 @@ function dataPath = startup(from_location, dandiset_id, varargin)
     persistent p
     if isempty(p)
         p = inputParser;
-        addRequired(p, 'from_location', @(x)validatestring(x, {'local', 'dandi', 'online'}))
-        addRequired(p, 'dandiset_id', @(x)validateattributes(x, {'string'}, {'nonempty'}))
-        addParameter(p, 'nwb_path', '', @(x)validateattributes(x, {'string'}, {'nonempty'}))
+        addRequired(p, 'from_location', @(x)mustBeNonempty(validatestring(x, {'local', 'dandi', 'online'})))
+        addRequired(p, 'dandiset_id', @(x)validateattributes(x, {'string', 'char'}, {'nonempty'}))
+        addParameter(p, 'nwb_path', '', @(x)validateattributes(x, {'string', 'char'}, {'nonempty'}))
         addParameter(p, 'util_libs', [], @(x)isscalar)
     end
     parse(p, from_location, dandiset_id, varargin{:});
@@ -46,9 +46,13 @@ function dataPath = startup(from_location, dandiset_id, varargin)
                       'Enter the Path to the matNWB library'};
             dlgtitle = 'Input';
             dims = [1 35];
-            definput = {'C:\Users\darwinm\Documents\MATLAB\";', ...
+            definput = {'C:\Users\darwinm\Documents\MATLAB\', ...
                         'C:\Users\darwinm\Documents\MATLAB\matnwb'};
             answer = inputdlg(prompt, dlgtitle, dims, definput);
+            if isempty(answer)
+                dataPath = 'Unknown';
+                return;
+            end
             dataPath = answer{1};
             matNWBPath = answer{2};
             addpath(genpath(matNWBPath));
