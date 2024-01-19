@@ -63,7 +63,8 @@ function dataPath = startup(from_location, dandiset_id, varargin)
             system("dandi download DANDI:" + dandiset_id);
 
             % Path to NWB data file(s)
-            dataPath = pwd + "/" + extractBefore(dandiset_id, '/') + "/" + nwb_path;
+            % dataPath = pwd + "/" + extractBefore(dandiset_id, '/') + "/" + nwb_path;
+            dataPath = pwd + "/" + dandiset_id + "/" + nwb_path;
             return;
     end
 
