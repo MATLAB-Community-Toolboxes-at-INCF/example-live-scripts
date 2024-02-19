@@ -14,13 +14,13 @@
 %
 %% Example:
 %
-%    nwb_final_path = startup("dandi", "000011", nwb_path="sub-255201_ses-20141124_behavior+ecephys+ogen.nwb", util_libs=["helper-functions"])
+%    nwb_final_path = setup("dandi", "000011", nwb_path="sub-255201_ses-20141124_behavior+ecephys+ogen.nwb", util_libs=["helper-functions"])
 %
 %  This call will setup the live-script to use the 000011 data set, considering that the live-script that requires this setup is running on DANDI-Hub.
 %  This call also setup the NWB file to be located in "000011/sub-255201_ses-20141124_behavior+ecephys+ogen.nwb"
 %  and loads in MATLAB the functions from the "helper-functions", located at the same level as the live-script calling this setup function.
 %
-function dataPath = startup(from_location, dandiset_id, varargin)
+function dataPath = setup(from_location, dandiset_id, varargin)
     persistent p
     if isempty(p)
         p = inputParser;
