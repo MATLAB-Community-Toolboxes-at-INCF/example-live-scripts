@@ -39,8 +39,8 @@ function dataPath = setup(from_location, dandiset_id, varargin)
 
     switch from_location
         case "online"
-            msgbox("Unfortunately, MATLAB Online is not yet automated." + newline + ...
-                   "Please use the 'local' location and manually create/select a folder in your MATLAB Drive.");
+            msgbox("At this time, MATLAB Online is not yet automated." + newline + ...
+                   "Please use the 'local' option and manually create/select a folder in your MATLAB Drive.");
         case "local"
             % Ask the user to fill the location of the data files
             prompt = {'Enter the path to the dandiset', ...
