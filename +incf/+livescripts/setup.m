@@ -19,6 +19,9 @@
 %  This call will setup the live-script to use the 000011 data set, considering that the live-script that requires this setup is running on DANDI-Hub.
 %  This call also setup the NWB file to be located in "000011/sub-255201/sub-255201_ses-20141124_behavior+ecephys+ogen.nwb"
 %  and loads in MATLAB the functions from the "helper-functions", located at the same level as the live-script calling this setup function.
+%  If nwb_path is provided, then the final path of the NWB file will be returned. If nwb_path is empty, then the final path to the dandiset will be returned.
+% 
+%  Note that if from_location = "online" and nwb_path is not provided, the entire dandiset will be downloaded.
 %
 function dataPath = setup(from_location, dandiset_id, varargin)
     persistent p
@@ -54,17 +57,20 @@ function dataPath = setup(from_location, dandiset_id, varargin)
                 dataPath = 'Unknown';
                 return;
             end
+
+            % Path to the NWB file. If nwb_path is empty, then this is path to the dandiset
             dataPath = answer{1} + "/" + dandiset_id + "/" + nwb_path;
             matNWBPath = answer{2};
             addpath(genpath(matNWBPath));
             return;
         case "dandi"
-            % Download the dataset
-            system("dandi download DANDI:" + dandiset_id);
-
-            % Path to NWB data file(s)
-            % dataPath = pwd + "/" + extractBefore(dandiset_id, '/') + "/" + nwb_path;
-            dataPath = pwd + "/" + dandiset_id + "/" + nwb_path;
+            % Download the entire dandiset or a single NWB file if nwb_path is provided
+            system("dandi download dandi://DANDI/" + dandiset_id + "/" + nwb_path);
+            
+            % Path to the dandiset or NWB file if nwb_path is provided
+            dataPath = pwd + "/" + dandiset_id;
+            if ~isempty(nwb_path)
+                dataPath = dataPath + "/" + nwb_path;
             return;
     end
 
