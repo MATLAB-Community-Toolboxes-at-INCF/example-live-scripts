@@ -21,7 +21,7 @@
 %  and loads in MATLAB the functions from the "helper-functions", located at the same level as the live-script calling this setup function.
 %  If nwb_path is provided, then the final path of the NWB file will be returned. If nwb_path is empty, then the final path to the dandiset will be returned.
 % 
-%  Note that if from_location = "online" and nwb_path is not provided, the entire dandiset will be downloaded.
+%  Note that if from_location = "dandi" and nwb_path is not provided, the entire dandiset will be downloaded.
 %
 function dataPath = setup(from_location, dandiset_id, varargin)
     persistent p
