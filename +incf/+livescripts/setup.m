@@ -14,10 +14,10 @@
 %
 %% Example:
 %
-%    nwb_final_path = setup("dandi", "000011", nwb_path="sub-255201_ses-20141124_behavior+ecephys+ogen.nwb", util_libs=["helper-functions"])
+%    nwb_final_path = setup("dandi", "000011", nwb_path="sub-255201/sub-255201_ses-20141124_behavior+ecephys+ogen.nwb", util_libs=["helper-functions"])
 %
 %  This call will setup the live-script to use the 000011 data set, considering that the live-script that requires this setup is running on DANDI-Hub.
-%  This call also setup the NWB file to be located in "000011/sub-255201_ses-20141124_behavior+ecephys+ogen.nwb"
+%  This call also setup the NWB file to be located in "000011/sub-255201/sub-255201_ses-20141124_behavior+ecephys+ogen.nwb"
 %  and loads in MATLAB the functions from the "helper-functions", located at the same level as the live-script calling this setup function.
 %
 function dataPath = setup(from_location, dandiset_id, varargin)
@@ -39,22 +39,22 @@ function dataPath = setup(from_location, dandiset_id, varargin)
 
     switch from_location
         case "online"
-            % TODO
-
+            msgbox("At this time, MATLAB Online is not yet automated." + newline + ...
+                   "Please use the 'local' option and manually create/select a folder in your MATLAB Drive.");
         case "local"
             % Ask the user to fill the location of the data files
-            prompt = {'Enter the path to the NWB data file(s)', ...
-                      'Enter the Path to the matNWB library'};
+            prompt = {'Enter the path to the dandiset', ...
+                      'Enter the Path to the MatNWB library'};
             dlgtitle = 'Input';
-            dims = [1 35];
-            definput = {'C:\Users\darwinm\Documents\MATLAB\', ...
+            dims = [1 65];
+            definput = {'C:\Users\darwinm\Documents\MATLAB\000011', ...
                         'C:\Users\darwinm\Documents\MATLAB\matnwb'};
             answer = inputdlg(prompt, dlgtitle, dims, definput);
             if isempty(answer)
                 dataPath = 'Unknown';
                 return;
             end
-            dataPath = answer{1};
+            dataPath = answer{1} + "/" + dandiset_id + "/" + nwb_path;
             matNWBPath = answer{2};
             addpath(genpath(matNWBPath));
             return;
