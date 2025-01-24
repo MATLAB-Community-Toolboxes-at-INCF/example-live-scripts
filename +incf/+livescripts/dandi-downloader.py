@@ -1,4 +1,5 @@
 # Monkey patch blessed to overcome MATLAB terminal emulation issues
+# See https://github.com/MATLAB-Community-Toolboxes-at-INCF/example-live-scripts/pull/16
 import blessed
 
 class FixedTerminal(blessed.Terminal):
