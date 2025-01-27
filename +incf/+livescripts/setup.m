@@ -60,16 +60,16 @@ function dataPath = setup(from_location, dandiset_id, varargin)
             return;
         case "dandi"
             % Download the dataset
-            path = ""
-            file = ""
+            path = "";
+            file = "";
             if not(isempty(nwb_path))
                 [path, file, ext] = fileparts(nwb_path);
                 nwb_path = "/" + nwb_path;
                 file = file + ext;
-                path = dandiset_id + "/" + path + "/"
+                path = dandiset_id + "/" + path + "/";
             end
-            system("dandi download dandi://dandi/" + dandiset_id + nwb_path);
-            if not(isempty(path))
+            system("python 'example-live-scripts/+incf/+livescripts/dandi-downloader.py' dandi://dandi/" + dandiset_id + nwb_path + " /home/jovyan/");
+            if string(path) ~= ""
                 mkdir(path);
                 movefile(file, path);
             end
