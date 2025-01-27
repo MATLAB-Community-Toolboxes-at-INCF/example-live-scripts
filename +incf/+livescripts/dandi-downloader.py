@@ -22,4 +22,4 @@ if __name__ == "__main__":
         sys.exit(1)
 
     dataset, output, *_ = sys.argv[1:]
-    download(f"DANDI:{dataset}", output, existing=DownloadExisting.OVERWRITE, jobs=1)
+    download(dataset, output, existing=DownloadExisting.OVERWRITE, jobs=1)
